@@ -1,0 +1,10 @@
+C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\MainScreen\bin\Debug\MainScreen.exe.config
+C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\MainScreen\bin\Debug\MainScreen.exe
+C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\MainScreen\bin\Debug\MainScreen.pdb
+C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\MainScreen\obj\Debug\MainScreen.csproj.AssemblyReference.cache
+C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\MainScreen\obj\Debug\MainScreen.csproj.SuggestedBindingRedirects.cache
+C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\MainScreen\obj\Debug\MainScreen.Properties.Resources.resources
+C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\MainScreen\obj\Debug\MainScreen.csproj.GenerateResource.cache
+C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\MainScreen\obj\Debug\MainScreen.csproj.CoreCompileInputs.cache
+C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\MainScreen\obj\Debug\MainScreen.exe
+C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\MainScreen\obj\Debug\MainScreen.pdb
