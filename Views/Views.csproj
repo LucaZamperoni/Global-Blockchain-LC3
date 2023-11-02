@@ -46,16 +46,43 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Form1.cs">
+        <Compile Include="Asiento.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Asiento.Designer.cs">
+          <DependentUpon>Asiento.cs</DependentUpon>
+        </Compile>
+        <Compile Include="LibroDiario.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="LibroDiario.Designer.cs">
+          <DependentUpon>LibroDiario.cs</DependentUpon>
+        </Compile>
+        <Compile Include="LibroMayor.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="LibroMayor.Designer.cs">
+          <DependentUpon>LibroMayor.cs</DependentUpon>
+        </Compile>
+        <Compile Include="LibroMayorTotal.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="LibroMayorTotal.Designer.cs">
+          <DependentUpon>LibroMayorTotal.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Main.cs">
             <SubType>Form</SubType>
         </Compile>
-        <Compile Include="Form1.Designer.cs">
-            <DependentUpon>Form1.cs</DependentUpon>
+        <Compile Include="Main.Designer.cs">
+            <DependentUpon>Main.cs</DependentUpon>
         </Compile>
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
-        <EmbeddedResource Include="Form1.resx">
-          <DependentUpon>Form1.cs</DependentUpon>
+        <EmbeddedResource Include="Asiento.resx">
+          <DependentUpon>Asiento.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Main.resx">
+          <DependentUpon>Main.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
