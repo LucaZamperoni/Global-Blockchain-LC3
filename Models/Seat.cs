@@ -5,17 +5,26 @@ namespace Models
 {
     public class Seat
     {
-        public DateTime Timestamp { get; set; }
-        public List<Movement> Movements { get; set; }
+        private DateTime date;
+        private String name;
+        private List<Account> account = new List<Account>();
+        private String hashSeat;
+
+        public DateTime _Date { get => date; set => date = value; }
+        public List<Account> _Account { get => account; set => account = value; }
+        public string _Name { get => name; set => name = value; }
+        public String _HashSeat { get => hashSeat; set => hashSeat = Program.CalculateHash(value); }
+
+        public Seat(DateTime date, String name, List<Account> account)
+        {
+            _Date = date;
+            _Name = name;
+            _Account = account;
+            _HashSeat = Program.CalculateHash(name);
+        }
 
         public Seat()
         {
-        }
-
-        public Seat(DateTime timestamp, List<Movement> movements)
-        {
-            Timestamp = timestamp;
-            Movements = movements;
         }
     }
 }

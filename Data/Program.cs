@@ -9,7 +9,7 @@ namespace Data
     {
         public static void Main(string[] args)
         {
-            var blockchain = new Blockchain();
+           /* var blockchain = new Blockchain();
 
             Console.WriteLine(File.Exists("blockchain.json") ? "Created." : "Ups");
 
@@ -23,10 +23,10 @@ namespace Data
             Seat seat = new Seat(DateTime.Now, movements);
             List<Seat> seats = new List<Seat>() { seat };
 
-            Block block = new Block(1, DateTime.Now, seats, "Un hash inventado",
+            Block block = new Block(1, DateTime.Now, seats,
                 "D835BA9BD7288F390C4A6CBAAD4A8BDD828FF5FA2418773F751E05845899E97B");
             
-            blockchain.AddBlock(block);
+            blockchain.AddBlock(block);*/
         }
     }
 }

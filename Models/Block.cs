@@ -16,7 +16,7 @@ namespace Data
         
         public Block(){}
 
-        public Block(int index, DateTime timestamp, List<Seat> seats, string hash, string previousHash)
+        public Block(int index, DateTime timestamp, List<Seat> seats, string previousHash)
         {
             Index = index;
             Timestamp = timestamp;

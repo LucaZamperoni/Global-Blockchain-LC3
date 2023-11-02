@@ -5,19 +5,38 @@ namespace Models
     [Serializable]
     public class Account
     {
-        public int Id { get; set; }
-        public FinancialState FinancialState { get; set; }
-        public string Name { get; set; }
+        private String nombre;
+        private float debe;
+        private float haber;
+
+
+        public string _Nombre { get => nombre; set => nombre = value; }
+        public float _Debe { get => debe; set => debe = value; }
+        public float _Haber { get => haber; set => haber = value; }
 
         public Account()
         {
+
+        }
+        public Account(string nombre, float monto, int debeOHaber)
+        {
+            this.nombre = nombre;
+
+            if (debeOHaber == 0)
+            {
+                this.debe = monto;
+            }
+            else
+            {
+                this.haber = monto;
+            }
         }
 
-        public Account(int id, FinancialState financialState, string name)
+        public Account(string nombre, float debe, float haber)
         {
-            Id = id;
-            FinancialState = financialState;
-            Name = name;
+            this.nombre = nombre;
+            this.haber = haber;
+            this.debe = debe;
         }
     }
 }

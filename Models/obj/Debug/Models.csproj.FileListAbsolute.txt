@@ -5,3 +5,12 @@ C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\Models\obj\Debug\Models
 C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\Models\obj\Debug\Models.exe
 C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\Models\obj\Debug\Models.pdb
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Models\bin\Debug\Models.pdb
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Models\obj\Debug\Models.pdb
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Models\bin\Debug\Models.dll
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Models\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Models\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Models\obj\Debug\Models.dll

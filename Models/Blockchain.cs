@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using Models;
 using Newtonsoft.Json;
+using Formatting = System.Xml.Formatting;
 
 
 namespace Data
@@ -9,12 +11,24 @@ namespace Data
     [Serializable]
     public class Blockchain
     {
-        public List<Block> Blocks { get; set; }
+        //atributos
+        private List<Block> blocks = new List<Block>();
+        private List<Seat> tempAccount = new List<Seat>();
         private const string PersistenceFile = "blockchain.json";
-        
+
+
+        //getters and setters
+        public List<Block> Blocks { get => blocks; set => blocks = value; }
+        public List<Seat> _TempAccount { get => tempAccount; set => tempAccount = value; }
+
         public Blockchain()
         {
-            Blocks = new List<Block>();
+        }
+
+        public Blockchain(List<Block> blocks, List<Seat> tempAccount)
+        {
+            Blocks = blocks;
+            _TempAccount = tempAccount;
             if (File.Exists(PersistenceFile))
             {
                 LoadBlockchainFromFile();
@@ -42,7 +56,7 @@ namespace Data
         {
             try
             {
-                var json = JsonConvert.SerializeObject(Blocks, Formatting.Indented);
+                var json = JsonConvert.SerializeObject(Blocks, (Newtonsoft.Json.Formatting)Formatting.Indented);
                 File.WriteAllText(PersistenceFile, json);
             }
             catch (Exception e)
@@ -59,7 +73,7 @@ namespace Data
 
         private void AddGenesisBlock()
         {
-            var genesisBlock = new Block(0, DateTime.Now, null, "First Hash", "0");
+            var genesisBlock = new Block(0, DateTime.Now, null, "0");
             Blocks.Add(genesisBlock);
             SaveBlockchainToFile();
         }
