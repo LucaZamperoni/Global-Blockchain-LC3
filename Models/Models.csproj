@@ -46,7 +46,7 @@
         <Compile Include="Account.cs" />
         <Compile Include="Block.cs" />
         <Compile Include="Blockchain.cs" />
-        <Compile Include="FinancialState.cs" />
+        <Compile Include="CuentaMayor.cs" />
         <Compile Include="Movement.cs" />
         <Compile Include="Miner.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>

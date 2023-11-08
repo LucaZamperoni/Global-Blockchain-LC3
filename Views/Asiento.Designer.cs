@@ -78,9 +78,10 @@ namespace Views
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(28, 351);
+            this.back.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.Location = new System.Drawing.Point(28, 346);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(102, 32);
             this.back.TabIndex = 4;
             this.back.Text = "Volver";
             this.back.UseVisualStyleBackColor = true;
@@ -88,9 +89,10 @@ namespace Views
             // 
             // btnCargarAsiento
             // 
-            this.btnCargarAsiento.Location = new System.Drawing.Point(410, 351);
+            this.btnCargarAsiento.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarAsiento.Location = new System.Drawing.Point(388, 346);
             this.btnCargarAsiento.Name = "btnCargarAsiento";
-            this.btnCargarAsiento.Size = new System.Drawing.Size(97, 23);
+            this.btnCargarAsiento.Size = new System.Drawing.Size(119, 32);
             this.btnCargarAsiento.TabIndex = 5;
             this.btnCargarAsiento.Text = "Cargar asiento";
             this.btnCargarAsiento.UseVisualStyleBackColor = true;
@@ -131,7 +133,7 @@ namespace Views
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 383);
+            this.ClientSize = new System.Drawing.Size(533, 390);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCargarAsiento);
             this.Controls.Add(this.back);

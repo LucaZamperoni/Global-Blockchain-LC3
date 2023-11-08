@@ -109,6 +109,8 @@ namespace Views
             this.asiento.AllowUserToAddRows = false;
             this.asiento.AllowUserToDeleteRows = false;
             this.asiento.AllowUserToOrderColumns = true;
+            this.asiento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.asiento.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.asiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.asiento.Location = new System.Drawing.Point(13, 61);
             this.asiento.Name = "asiento";
@@ -120,6 +122,8 @@ namespace Views
             // 
             // movimientos
             // 
+            this.movimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.movimientos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.movimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.movimientos.Location = new System.Drawing.Point(403, 61);
             this.movimientos.Name = "movimientos";

@@ -28,3 +28,5 @@ C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Views\bin\Debug\Newtonsoft.
 C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Views\bin\Debug\Models.pdb
 C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Views\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Views\obj\Debug\Views.LibroDiario.resources
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Views\obj\Debug\Views.LibroMayor.resources
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Views\obj\Debug\Views.LibroMayorTotal.resources

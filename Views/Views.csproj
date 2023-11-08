@@ -84,6 +84,12 @@
         <EmbeddedResource Include="LibroDiario.resx">
           <DependentUpon>LibroDiario.cs</DependentUpon>
         </EmbeddedResource>
+        <EmbeddedResource Include="LibroMayor.resx">
+          <DependentUpon>LibroMayor.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="LibroMayorTotal.resx">
+          <DependentUpon>LibroMayorTotal.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Main.resx">
           <DependentUpon>Main.cs</DependentUpon>
         </EmbeddedResource>
