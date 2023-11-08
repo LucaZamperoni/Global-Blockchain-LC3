@@ -1,1 +1,68 @@
-{"Blocks":[{"seat":{"_Date":"2023-11-07T00:00:00-03:00","_Account":[{"_Nombre":"MERCADERIAS","_Debe":1000.0,"_Haber":0.0},{"_Nombre":"CAJA","_Debe":0.0,"_Haber":1000.0}],"_Name":"MUY BUENAS","_HashSeat":"D655DA2A620C5403F0F294697FC9CBE772E3E40A3EB3C83F06FC30080B37260B"},"Hash":"000096712278E5622659E468C04F57CCEE0C7F4702A2A6C8173CAC320241ED89","PreviousHash":"976393F9A9D6098BC0381CBADEF78BA472FC5D2069EBC04F65B608D04144D2E1"}],"_TempAccount":[]}
+{
+  "Blocks": [
+    {
+      "seat": {
+        "_Date": "2023-11-07T00:00:00-03:00",
+        "_Account": [
+          {
+            "_Nombre": "MERCADERIAS",
+            "_Debe": 1000.0,
+            "_Haber": 0.0
+          },
+          {
+            "_Nombre": "CAJA",
+            "_Debe": 0.0,
+            "_Haber": 1000.0
+          }
+        ],
+        "_Name": "MUY BUENAS",
+        "_HashSeat": "13F4A448B22328E31FCAF8CD2C511BCC5C7B7086EB40D7DDD0A4DBAEDD984DCA"
+      },
+      "Hash": "000096712278E5622659E468C04F57CCEE0C7F4702A2A6C8173CAC320241ED89",
+      "PreviousHash": "976393F9A9D6098BC0381CBADEF78BA472FC5D2069EBC04F65B608D04144D2E1"
+    },
+    {
+      "seat": {
+        "_Date": "2023-11-07T00:00:00-03:00",
+        "_Account": [
+          {
+            "_Nombre": "RODADOS",
+            "_Debe": 15000.0,
+            "_Haber": 0.0
+          },
+          {
+            "_Nombre": "DOCUMENTOS A PAGAR",
+            "_Debe": 0.0,
+            "_Haber": 15000.0
+          }
+        ],
+        "_Name": "MUY BUENAS 2",
+        "_HashSeat": "3CA550430DD2E9320A611190FB21F3A9EBF5A683E090225AB3881CFA90FC2A2D"
+      },
+      "Hash": "00009CC08339D02952789835C778FEDB889E536BBFB9913F1FA5A57AF9DDA734",
+      "PreviousHash": "000096712278E5622659E468C04F57CCEE0C7F4702A2A6C8173CAC320241ED89"
+    },
+    {
+      "seat": {
+        "_Date": "2023-11-07T00:00:00-03:00",
+        "_Account": [
+          {
+            "_Nombre": "IMPUESTOS",
+            "_Debe": 1000.0,
+            "_Haber": 0.0
+          },
+          {
+            "_Nombre": "CAJA",
+            "_Debe": 0.0,
+            "_Haber": 1000.0
+          }
+        ],
+        "_Name": "Genial",
+        "_HashSeat": "FCB8F9D80D80C1461C254805911DC5E69E736FE00B7D72C9ADD5B209532E068B"
+      },
+      "Hash": "0000C5F5CFF6FAEC4DAC387E834AA8E3CD1B0586C752BC7090339DB044F0A80D",
+      "PreviousHash": "00009CC08339D02952789835C778FEDB889E536BBFB9913F1FA5A57AF9DDA734"
+    }
+  ],
+  "_TempAccount": []
+}

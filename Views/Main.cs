@@ -40,7 +40,7 @@ namespace Views
 
         private void Main_Load(object sender, EventArgs e)
         {
-            
+            StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }

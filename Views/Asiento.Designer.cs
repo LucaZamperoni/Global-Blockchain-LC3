@@ -131,7 +131,7 @@ namespace Views
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 386);
+            this.ClientSize = new System.Drawing.Size(533, 383);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCargarAsiento);
             this.Controls.Add(this.back);
@@ -140,6 +140,7 @@ namespace Views
             this.Controls.Add(this.descripcion);
             this.Controls.Add(this.nombre);
             this.Name = "Asiento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asiento";
             this.Load += new System.EventHandler(this.Asiento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

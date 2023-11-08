@@ -81,6 +81,9 @@
         <EmbeddedResource Include="Asiento.resx">
           <DependentUpon>Asiento.cs</DependentUpon>
         </EmbeddedResource>
+        <EmbeddedResource Include="LibroDiario.resx">
+          <DependentUpon>LibroDiario.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Main.resx">
           <DependentUpon>Main.cs</DependentUpon>
         </EmbeddedResource>

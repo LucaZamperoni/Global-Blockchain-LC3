@@ -78,6 +78,7 @@
             this.Controls.Add(this.CargarAsiento);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Programa Contable";
             this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);

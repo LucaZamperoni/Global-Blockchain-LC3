@@ -13,7 +13,7 @@ namespace Data
         {
             try
             {
-                string blockchainJson = JsonConvert.SerializeObject(blockchain);
+                string blockchainJson = JsonConvert.SerializeObject(blockchain, (Newtonsoft.Json.Formatting)Formatting.Indented);
                 File.WriteAllText(PersistenceFile, blockchainJson);
                 return true;
             }
