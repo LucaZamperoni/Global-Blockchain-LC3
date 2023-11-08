@@ -10,7 +10,6 @@ C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\Data\obj\Debug\Data.csp
 C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\Data\obj\Debug\Data.csproj.CopyComplete
 C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\Data\obj\Debug\Data.exe
 C:\Users\lucaz\RiderProjects\Contabilidad-Blockchain-LC3\Data\obj\Debug\Data.pdb
-C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\bin\Debug\Data.exe
 C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\bin\Debug\Data.pdb
 C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\bin\Debug\Models.pdb
@@ -18,6 +17,7 @@ C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\bin\Debug\Newtonsoft.J
 C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\obj\Debug\Data.csproj.AssemblyReference.cache
 C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\obj\Debug\Data.csproj.CopyComplete
-C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\obj\Debug\Data.exe
 C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\obj\Debug\Data.pdb
 C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\bin\Debug\Models.dll
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\bin\Debug\Data.dll
+C:\Users\Usuario\RiderProjects\Global-Blockchain-LC3\Data\obj\Debug\Data.dll

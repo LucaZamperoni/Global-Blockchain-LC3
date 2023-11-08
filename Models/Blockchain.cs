@@ -14,7 +14,7 @@ namespace Data
         //atributos
         private List<Block> blocks = new List<Block>();
         private List<Seat> tempAccount = new List<Seat>();
-        private const string PersistenceFile = "blockchain.json";
+        //private const string PersistenceFile = "blockchain.json";
 
 
         //getters and setters
@@ -29,16 +29,16 @@ namespace Data
         {
             Blocks = blocks;
             _TempAccount = tempAccount;
-            if (File.Exists(PersistenceFile))
+            /*if (File.Exists(PersistenceFile))
             {
                 LoadBlockchainFromFile();
             }
             else
             {
-                AddGenesisBlock();
-            }
+                //AddGenesisBlock();
+            }*/
         }
-        
+        /*
         private void LoadBlockchainFromFile()
         {
             try
@@ -70,12 +70,18 @@ namespace Data
             Blocks.Add(block);
             SaveBlockchainToFile();
         }
-
+        
         private void AddGenesisBlock()
         {
             var genesisBlock = new Block(0, DateTime.Now, null, "0");
             Blocks.Add(genesisBlock);
             SaveBlockchainToFile();
-        }
+        }*/
+        
+        
+        
+        
+        
+        //Esto comentado es pq estoy probando de persistir como lo hicieron los otros 
     }
 }

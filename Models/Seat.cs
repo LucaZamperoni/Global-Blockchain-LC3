@@ -13,14 +13,14 @@ namespace Models
         public DateTime _Date { get => date; set => date = value; }
         public List<Account> _Account { get => account; set => account = value; }
         public string _Name { get => name; set => name = value; }
-        public String _HashSeat { get => hashSeat; set => hashSeat = Program.CalculateHash(value); }
+        public String _HashSeat { get => hashSeat; set => hashSeat = Miner.CalculateHash(value); }
 
         public Seat(DateTime date, String name, List<Account> account)
         {
             _Date = date;
             _Name = name;
             _Account = account;
-            _HashSeat = Program.CalculateHash(name);
+            _HashSeat = Miner.CalculateHash(name);
         }
 
         public Seat()

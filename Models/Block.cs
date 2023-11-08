@@ -8,31 +8,25 @@ namespace Data
     [Serializable]
     public class Block
     {
-        public int Index { get; set; }
-        public DateTime Timestamp { get; set; }
-        public List<Seat> Seats { get; set; }
+        public Seat seat { get; set; }
         public string Hash { get; set; }
         public string PreviousHash { get; set; }
         
         public Block(){}
 
-        public Block(int index, DateTime timestamp, List<Seat> seats, string previousHash)
+        public Block(Seat seat, Blockchain blockchain)
         {
-            Index = index;
-            Timestamp = timestamp;
-            Seats = seats;
-            Hash = CalculateHash();
-            PreviousHash = previousHash;
-        }
-        
-        public string CalculateHash()
-        {
-            var data = $"{Index}{Timestamp}{PreviousHash}{Seats}";
-            using (var sha256 = SHA256.Create())
+            this.seat = seat;
+            this.Hash = Miner.MineBlock(seat);
+            if (blockchain.Blocks.Count == 0)
             {
-                var bytes = sha256.ComputeHash(System.Text.Encoding.UTF8.GetBytes(data));
-                return BitConverter.ToString(bytes).Replace("-", string.Empty);
+                this.PreviousHash = Miner.CalculateHash("cero");
+            }
+            else
+            {
+                this.PreviousHash = blockchain.Blocks[blockchain.Blocks.Count - 1].Hash;
             }
         }
+        
     }
 }

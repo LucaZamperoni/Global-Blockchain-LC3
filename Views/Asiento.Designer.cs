@@ -36,7 +36,7 @@ namespace Views
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.back = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCargarAsiento = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -86,14 +86,15 @@ namespace Views
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
-            // button1
+            // btnCargarAsiento
             // 
-            this.button1.Location = new System.Drawing.Point(410, 351);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Cargar asiento";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCargarAsiento.Location = new System.Drawing.Point(410, 351);
+            this.btnCargarAsiento.Name = "btnCargarAsiento";
+            this.btnCargarAsiento.Size = new System.Drawing.Size(97, 23);
+            this.btnCargarAsiento.TabIndex = 5;
+            this.btnCargarAsiento.Text = "Cargar asiento";
+            this.btnCargarAsiento.UseVisualStyleBackColor = true;
+            this.btnCargarAsiento.Click += new System.EventHandler(this.btnCargarAsiento_Click);
             // 
             // dataGridView1
             // 
@@ -132,7 +133,7 @@ namespace Views
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(529, 386);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCargarAsiento);
             this.Controls.Add(this.back);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox1);
@@ -153,7 +154,7 @@ namespace Views
         private System.Windows.Forms.DataGridView dataGridView1;
 
         private System.Windows.Forms.Button back;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCargarAsiento;
 
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
 

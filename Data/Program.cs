@@ -2,13 +2,55 @@
 using System.Collections.Generic;
 using System.IO;
 using Models;
+using Newtonsoft.Json;
 
 namespace Data
 {
-    internal class Program
+    public class Program
     {
-        public static void Main(string[] args)
+        private const string PersistenceFile = "blockchain.json";
+        public static bool PersistBlockchain(Blockchain blockchain)
         {
+            try
+            {
+                string blockchainJson = JsonConvert.SerializeObject(blockchain);
+                File.WriteAllText(PersistenceFile, blockchainJson);
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
+        }
+
+        public static Blockchain ReadBlockchain()
+        {
+            try
+            {
+                if (File.Exists(PersistenceFile))
+                {
+                    string blockchainJson = File.ReadAllText(PersistenceFile);
+                    return JsonConvert.DeserializeObject<Blockchain>(blockchainJson);
+                }
+                else
+                {
+                    return new Blockchain();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return new Blockchain();
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
            /* var blockchain = new Blockchain();
 
             Console.WriteLine(File.Exists("blockchain.json") ? "Created." : "Ups");
@@ -27,6 +69,6 @@ namespace Data
                 "D835BA9BD7288F390C4A6CBAAD4A8BDD828FF5FA2418773F751E05845899E97B");
             
             blockchain.AddBlock(block);*/
-        }
+        
     }
 }

@@ -6,15 +6,10 @@ using Data;
 
 namespace Models
 {
-    public class Program
+    public class Miner
     {
         static int dificultad = 4;
-
-
-
-        /// <summary>
         /// Calcula el HASH
-        /// </summary>
         /// <param name="text"></param>
         /// <returns>calculo del HASH</returns>
         public static String CalculateHash(String text)
@@ -30,6 +25,21 @@ namespace Models
             }
             return myHashCalculated;
         }
+        public static String MineBlock(Seat seat)
+        {
+            String hash = "";
+            int proof = 0;
+            String zeros = String.Empty.PadLeft(dificultad, '0');
+
+            do
+            {
+                String text = String.Format("{0}{1}{2}", seat._Date, seat._HashSeat, proof);
+                hash = Miner.CalculateHash(text);
+                proof++;
+            } while (!hash.StartsWith(zeros));
+
+            return hash;
+        }
         public static bool Validator(Seat seat, Blockchain blockchain, List<String> accountNames)
         {
             bool resultado = true;
@@ -40,12 +50,9 @@ namespace Models
                 a._Nombre = accountName;
                 a._Haber += 0;
                 a._Debe += 0;
-                
-                 
-                /*
                 foreach (Block block in blockchain.Blocks)
                 {
-                    foreach (Account account in block.Seats._Account)
+                    foreach (Account account in block.seat._Account)
                     {
                         if (account._Nombre.Equals(accountName))
                         {
@@ -54,7 +61,7 @@ namespace Models
                         }
                     }
 
-                }*/
+                }
                 foreach (Account accountSeat in seat._Account)
                 {
                     if (accountSeat._Nombre.Equals(a._Nombre))
@@ -67,7 +74,6 @@ namespace Models
                 }
                 accounts.Add(a);
             }
-
             float total = 0;
             foreach (Account a in accounts)
             {
