@@ -30,13 +30,6 @@ namespace Views
             main.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            LibroMayorTotal total = new LibroMayorTotal();
-            total.Show();
-        }
-
         private void Ver_Click(object sender, EventArgs e)
         {
             try

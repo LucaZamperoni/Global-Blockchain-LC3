@@ -64,12 +64,6 @@
         <Compile Include="LibroMayor.Designer.cs">
           <DependentUpon>LibroMayor.cs</DependentUpon>
         </Compile>
-        <Compile Include="LibroMayorTotal.cs">
-          <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="LibroMayorTotal.Designer.cs">
-          <DependentUpon>LibroMayorTotal.cs</DependentUpon>
-        </Compile>
         <Compile Include="Main.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -86,9 +80,6 @@
         </EmbeddedResource>
         <EmbeddedResource Include="LibroMayor.resx">
           <DependentUpon>LibroMayor.cs</DependentUpon>
-        </EmbeddedResource>
-        <EmbeddedResource Include="LibroMayorTotal.resx">
-          <DependentUpon>LibroMayorTotal.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Main.resx">
           <DependentUpon>Main.cs</DependentUpon>
