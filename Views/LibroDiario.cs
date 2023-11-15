@@ -37,6 +37,11 @@ namespace Views
 
                 asiento.DataSource = seats;
             }
+            DataGridViewColumn hashColumn = asiento.Columns["_HashSeat"];
+            if (hashColumn != null)
+            {
+                hashColumn.Visible = false;
+            }
         }
         private void asiento_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

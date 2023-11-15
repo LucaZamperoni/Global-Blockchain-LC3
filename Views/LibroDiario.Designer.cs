@@ -40,6 +40,8 @@ namespace Views
             this.back = new System.Windows.Forms.Button();
             this.asiento = new System.Windows.Forms.DataGridView();
             this.movimientos = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.asiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movimientos)).BeginInit();
             this.SuspendLayout();
@@ -84,24 +86,30 @@ namespace Views
             // 
             // Ver
             // 
-            this.Ver.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ver.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Ver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Ver.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ver.ForeColor = System.Drawing.SystemColors.Info;
             this.Ver.Location = new System.Drawing.Point(697, 14);
             this.Ver.Name = "Ver";
-            this.Ver.Size = new System.Drawing.Size(75, 27);
+            this.Ver.Size = new System.Drawing.Size(75, 29);
             this.Ver.TabIndex = 4;
             this.Ver.Text = "Ver";
-            this.Ver.UseVisualStyleBackColor = true;
+            this.Ver.UseVisualStyleBackColor = false;
             this.Ver.Click += new System.EventHandler(this.Ver_Click);
             // 
             // back
             // 
-            this.back.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.Location = new System.Drawing.Point(13, 301);
+            this.back.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.ForeColor = System.Drawing.SystemColors.Info;
+            this.back.Location = new System.Drawing.Point(12, 326);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(75, 34);
             this.back.TabIndex = 5;
             this.back.Text = "Volver";
-            this.back.UseVisualStyleBackColor = true;
+            this.back.UseVisualStyleBackColor = false;
             this.back.Click += new System.EventHandler(this.back_Click_1);
             // 
             // asiento
@@ -111,8 +119,9 @@ namespace Views
             this.asiento.AllowUserToOrderColumns = true;
             this.asiento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.asiento.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.asiento.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.asiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.asiento.Location = new System.Drawing.Point(13, 61);
+            this.asiento.Location = new System.Drawing.Point(13, 88);
             this.asiento.Name = "asiento";
             this.asiento.ReadOnly = true;
             this.asiento.Size = new System.Drawing.Size(370, 216);
@@ -124,17 +133,41 @@ namespace Views
             // 
             this.movimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.movimientos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.movimientos.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.movimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.movimientos.Location = new System.Drawing.Point(403, 61);
+            this.movimientos.Location = new System.Drawing.Point(403, 88);
             this.movimientos.Name = "movimientos";
             this.movimientos.Size = new System.Drawing.Size(369, 216);
             this.movimientos.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 26);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Asientos:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(403, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 26);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Movimientos:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LibroDiario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(786, 347);
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.ClientSize = new System.Drawing.Size(786, 369);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.movimientos);
             this.Controls.Add(this.asiento);
             this.Controls.Add(this.back);
@@ -150,6 +183,9 @@ namespace Views
             ((System.ComponentModel.ISupportInitialize)(this.movimientos)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
 
         private System.Windows.Forms.DataGridView movimientos;
 

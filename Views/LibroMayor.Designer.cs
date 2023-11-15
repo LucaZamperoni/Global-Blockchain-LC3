@@ -126,24 +126,30 @@ namespace Views
             // 
             // back
             // 
-            this.back.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.ForeColor = System.Drawing.SystemColors.Info;
             this.back.Location = new System.Drawing.Point(12, 276);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(75, 34);
             this.back.TabIndex = 9;
             this.back.Text = "Volver";
-            this.back.UseVisualStyleBackColor = true;
+            this.back.UseVisualStyleBackColor = false;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // Ver
             // 
-            this.Ver.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ver.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Ver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Ver.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ver.ForeColor = System.Drawing.SystemColors.Info;
             this.Ver.Location = new System.Drawing.Point(264, 12);
             this.Ver.Name = "Ver";
-            this.Ver.Size = new System.Drawing.Size(75, 27);
+            this.Ver.Size = new System.Drawing.Size(75, 33);
             this.Ver.TabIndex = 10;
             this.Ver.Text = "Ver";
-            this.Ver.UseVisualStyleBackColor = true;
+            this.Ver.UseVisualStyleBackColor = false;
             this.Ver.Click += new System.EventHandler(this.Ver_Click);
             // 
             // dataview
@@ -158,13 +164,16 @@ namespace Views
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(242, 276);
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Info;
+            this.button1.Location = new System.Drawing.Point(236, 276);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 34);
+            this.button1.Size = new System.Drawing.Size(103, 34);
             this.button1.TabIndex = 12;
             this.button1.Text = "Ver Totales";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
