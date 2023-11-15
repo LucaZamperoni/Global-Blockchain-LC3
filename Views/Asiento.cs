@@ -62,23 +62,32 @@ namespace Views
             List<Account> listaCuentas = new List<Account>();
 
 
-
+            
             try
             {
                 if (string.IsNullOrEmpty(textBox1.Text)) { throw new InvalidOperationException(""); }
                 for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                 {
                     Account account = new Account();
-
+                  
                     account._Nombre = (string)dataGridView1.Rows[i].Cells[0].FormattedValue;
+                    
 
                     if (dataGridView1.Rows[i].Cells[1].FormattedValue.Equals("Debe"))
                     {
+                        if (Convert.ToSingle(dataGridView1.Rows[i].Cells[2].FormattedValue) == 0)
+                        {
+                            throw new InvalidOperationException("");
+                        }
                         account._Debe = Convert.ToSingle(dataGridView1.Rows[i].Cells[2].FormattedValue);
                         account._Haber = 0;
                     }
                     else if (dataGridView1.Rows[i].Cells[1].FormattedValue.Equals("Haber"))
                     {
+                        if (Convert.ToSingle(dataGridView1.Rows[i].Cells[2].FormattedValue) == 0)
+                        {
+                            throw new InvalidOperationException("");
+                        }
                         account._Haber = Convert.ToSingle(dataGridView1.Rows[i].Cells[2].FormattedValue);
                         account._Debe = 0;
                     }
@@ -92,24 +101,30 @@ namespace Views
                 Blockchain blockchain = Program.ReadBlockchain();
                 List<String> accountNames = Cuentas.carga_combo;
                 Seat seat = new Seat(dateTimePicker1.Value.Date, textBox1.Text, listaCuentas);
-                if (Miner.Validator(seat, blockchain, accountNames))
+                if (listaCuentas[0]._Nombre == null  || string.IsNullOrWhiteSpace(dataGridView1.Rows[0].Cells[0].Value.ToString()))
                 {
-                    Block block = new Block(seat, blockchain);
-
-                    blockchain.Blocks.Add(block);
-
-                    Program.PersistBlockchain(blockchain);
-                    MessageBox.Show("Carga exitosa");
+                    throw new InvalidOperationException("");
                 }
                 else
                 {
-                    MessageBox.Show("Datos erroneos");
-                }
+                    if (Miner.Validator(seat, blockchain, accountNames))
+                    {
+                        Block block = new Block(seat, blockchain);
 
+                        blockchain.Blocks.Add(block);
+
+                        Program.PersistBlockchain(blockchain);
+                        MessageBox.Show("Carga exitosa");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Datos erroneos");
+                    }
+                }
             }
             catch
             {
-                MessageBox.Show("Hay una celda vacia");
+                MessageBox.Show("Datos faltantes o incorrectos");
             }
 
         }

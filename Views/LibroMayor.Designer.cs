@@ -42,9 +42,10 @@ namespace Views
             this.back = new System.Windows.Forms.Button();
             this.Ver = new System.Windows.Forms.Button();
             this.dataview = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,20 +163,6 @@ namespace Views
             this.dataview.Size = new System.Drawing.Size(404, 298);
             this.dataview.TabIndex = 11;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Info;
-            this.button1.Location = new System.Drawing.Point(236, 276);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 34);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Ver Totales";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
@@ -197,14 +184,35 @@ namespace Views
             this.textBox2.Size = new System.Drawing.Size(144, 20);
             this.textBox2.TabIndex = 14;
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(14, 230);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 30);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Total de la cuenta:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(157, 236);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(144, 20);
+            this.textBox3.TabIndex = 16;
+            // 
             // LibroMayor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 322);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataview);
             this.Controls.Add(this.Ver);
             this.Controls.Add(this.back);
@@ -225,11 +233,12 @@ namespace Views
             this.PerformLayout();
         }
 
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox3;
+
         private System.Windows.Forms.TextBox textBox2;
 
         private System.Windows.Forms.TextBox textBox1;
-
-        private System.Windows.Forms.Button button1;
 
         private System.Windows.Forms.Button Ver;
         private System.Windows.Forms.DataGridView dataview;

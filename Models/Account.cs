@@ -38,5 +38,6 @@ namespace Models
             this.haber = haber;
             this.debe = debe;
         }
+        
     }
 }

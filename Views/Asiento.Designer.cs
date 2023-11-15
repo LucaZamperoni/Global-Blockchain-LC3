@@ -47,7 +47,7 @@ namespace Views
             // nombre
             // 
             this.nombre.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombre.Location = new System.Drawing.Point(28, 32);
+            this.nombre.Location = new System.Drawing.Point(28, 18);
             this.nombre.Name = "nombre";
             this.nombre.Size = new System.Drawing.Size(114, 20);
             this.nombre.TabIndex = 0;
@@ -57,7 +57,7 @@ namespace Views
             // descripcion
             // 
             this.descripcion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descripcion.Location = new System.Drawing.Point(12, 72);
+            this.descripcion.Location = new System.Drawing.Point(12, 55);
             this.descripcion.Name = "descripcion";
             this.descripcion.Size = new System.Drawing.Size(148, 23);
             this.descripcion.TabIndex = 1;
@@ -67,7 +67,7 @@ namespace Views
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(157, 72);
+            this.textBox1.Location = new System.Drawing.Point(157, 57);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(350, 23);
             this.textBox1.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace Views
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(157, 32);
+            this.dateTimePicker1.Location = new System.Drawing.Point(157, 18);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(350, 23);
             this.dateTimePicker1.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace Views
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.back.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back.ForeColor = System.Drawing.SystemColors.Info;
-            this.back.Location = new System.Drawing.Point(28, 346);
+            this.back.Location = new System.Drawing.Point(28, 328);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(102, 32);
             this.back.TabIndex = 4;
@@ -100,7 +100,7 @@ namespace Views
             this.btnCargarAsiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCargarAsiento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargarAsiento.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnCargarAsiento.Location = new System.Drawing.Point(375, 346);
+            this.btnCargarAsiento.Location = new System.Drawing.Point(375, 328);
             this.btnCargarAsiento.Name = "btnCargarAsiento";
             this.btnCargarAsiento.Size = new System.Drawing.Size(132, 32);
             this.btnCargarAsiento.TabIndex = 5;
@@ -113,7 +113,7 @@ namespace Views
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.Column1, this.Column2, this.Column3 });
-            this.dataGridView1.Location = new System.Drawing.Point(28, 114);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 96);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(479, 215);
             this.dataGridView1.TabIndex = 6;
@@ -145,7 +145,7 @@ namespace Views
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(533, 390);
+            this.ClientSize = new System.Drawing.Size(533, 370);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCargarAsiento);
             this.Controls.Add(this.back);

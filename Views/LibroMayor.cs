@@ -66,14 +66,17 @@ namespace Views
                     dataview.DataSource = accounts;
                     int sumaDebe = 0;
                     int sumaHaber = 0;
+                    int total = 0;
                     for (int i = 0; i < dataview.Rows.Count; i++)
                     {
                         sumaDebe += Convert.ToInt32(dataview.Rows[i].Cells[0].FormattedValue);
                         sumaHaber += Convert.ToInt32(dataview.Rows[i].Cells[1].FormattedValue);
                     }
 
+                    total = sumaDebe - sumaHaber;
                     textBox1.Text = sumaDebe.ToString();
                     textBox2.Text = sumaHaber.ToString();
+                    textBox3.Text = total.ToString();
                 }
             }
             catch (NullReferenceException exception)
@@ -81,6 +84,5 @@ namespace Views
                 MessageBox.Show("Seleccione una cuenta");
             }
         }
-        
     }
 }

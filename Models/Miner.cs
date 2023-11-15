@@ -59,6 +59,7 @@ namespace Models
                             a._Haber += account._Haber;
                             a._Debe += account._Debe;
                         }
+                       
                     }
 
                 }
